@@ -1,0 +1,144 @@
+body {
+  font-size: 16px;
+  font-family: ArialMT, Arial, sans-serif;
+}
+
+.logo {
+  margin: .2rem auto;
+  height: 28px;
+  width: 157px;
+  background: $color-white url("../images/logo-mobile@2x.png") no-repeat;
+}
+
+.header {
+  margin: 0;
+  height: 179px;
+  background: linear-gradient(90deg, teal, violet);
+  display: flex;
+  &-text {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: auto;
+    color: $color-white;
+  }
+}
+
+.registration-form {
+  margin: 5rem auto 2rem auto;
+  padding: 0 15px;
+  &__details {
+    padding-bottom: 2rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: $color-text;
+  }
+}
+
+.info-icon {
+  float: right;
+}
+
+.terms-conditions {
+  width: 80%;
+  margin: 2rem auto;
+  .ui.checkbox label {
+      color: $color-text;
+  }
+}
+
+.register-btn {
+  padding: 0 15px;
+}
+
+.errors-container {
+  margin: 5rem auto 2rem auto;
+  padding: 0 15px;
+}
+
+.errors-content {
+  width: 80%;
+  margin: 2rem auto;
+  color: $color-error;
+}
+
+.custom-reqired {
+  display: block;
+  margin-bottom: .8rem;
+  &::before {
+    content: '*';
+    color: $color-error;
+    margin-right: .5rem;
+  }
+}
+
+.radio-options {
+  .flex .field {
+    display: inline-block;
+    width: 35px;
+  }
+  input {
+    width: 10px !important;
+  }
+  .field {
+    width: 100px;
+  }
+}
+
+@mixin flag {
+  width: 50px;
+  height: 30px;
+}
+
+.country-us {
+  @include flag;
+  background: $color-white url("../images/ic-usa-desktop@2x.jpg") no-repeat;
+}
+
+.country-canada {
+  @include flag;
+  background: $color-white url("../images/ic-canada-desktop@2x.jpg") no-repeat;
+}
+
+.ui.grid.birthday-fields {
+  width: 100%;
+  margin: 0;
+  .custom-select {
+    width: 100%;
+    &.ui.dropdown {
+      min-width: auto;
+    }
+  }
+  .column {
+    padding: 0 .2rem;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+@media ($desktop) {
+  .registration-form, .errors-container {
+    width: 556px;
+  }
+
+  .logo {
+    margin: .2rem auto;
+    height: 36px;
+    width: 182px;
+    background: $color-white url("../images/logo-desktop.svg") no-repeat;
+  }
+
+  .header-text {
+    font-size: 4rem;
+  }
+
+  .register-btn {
+    height: 35px;
+    width: 280px;
+    margin: auto;
+  }
+}

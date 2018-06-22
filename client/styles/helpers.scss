@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  > * {
+    flex: 1 auto;
+  }
+}
+
+.align-center {
+  align-items: center;
+}

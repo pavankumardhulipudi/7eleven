@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="162" height="34" viewBox="0 0 162 34">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#565656" font-family="Arial-BoldItalicMT, Arial" font-size="18" font-style="italic" font-weight="bold" transform="translate(-1)">
+            <tspan x="49.492" y="23">My Company</tspan>
+        </text>
+        <path fill="#F5E149" stroke="#979797" d="M20 27L7.657 32.562l2.357-11.78-9.986-8.344 13.8-1.72L20 0l6.172 10.719 13.8 1.719-9.986 8.343 2.357 11.781z"/>
+    </g>
+</svg>
